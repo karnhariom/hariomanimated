@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-moz-selection {
+  background-color: black;
+  color: white;
+}
+
+::selection {
+  background-color: black;
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.sec-heading {
+  font-size: 4.5vw;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.btngroup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  margin-top: 2vw;
+}
+
+.btn {
+  font-size: 1.3vw;
+  padding: 1vw 2vw;
+  border: 0.2vw solid #FF8132;
+  border-radius: 100vw;
+  font-weight: 500;
+}
+
+.d_btn {
+  background-color: #FF8132;
+  color: white;
+}
+
+.l_btn {
+  color: #FF8132;
+}
+
+.logo {
+  font-size: 1.3vw;
+  position: relative;
+}
+.logo::before {
+  content: "";
+  position: absolute;
+  width: 0.4vw;
+  height: 0.4vw;
+  border-radius: 100vw;
+  background-color: white;
+  left: -15%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.logo::after {
+  content: "";
+  position: absolute;
+  width: 0.4vw;
+  height: 0.4vw;
+  border-radius: 100vw;
+  background-color: white;
+  right: -15%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hero {
+  width: 100%;
+  height: 100%;
+  padding: 2vw 10vw;
+  border-radius: 0 0 4vw 4vw;
+  margin-bottom: -4vw;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+}
+.hero .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 1.5vw 3vw;
+  border-radius: 1090px;
+}
+.hero .header a {
+  color: white;
+}
+.hero .header .nav ul {
+  display: flex;
+  gap: 3vw;
+}
+.hero .header .nav ul li {
+  font-size: 1.3vw;
+}
+.hero .intro {
+  padding: 3vw 0;
+}
+.hero .intro h5 {
+  font-size: 2.2vw;
+  opacity: 0.7;
+  font-weight: 600;
+}
+.hero .intro h2 {
+  font-size: 6.5vw;
+  line-height: 1.2;
+}
+
+.service {
+  width: 100%;
+  height: 100%;
+  padding: 10vw 10vw;
+  background-color: black;
+  color: white;
+  border-radius: 0 0 4vw 4vw;
+  position: relative;
+}
+.service .sec-heading {
+  color: white;
+}
+.service .servboxes {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5vw;
+  gap: 2vw;
+}
+.service .servboxes .servbox {
+  max-width: 30vw;
+  padding: 2vw 3vw;
+  border-radius: 2vw;
+  background-color: white;
+  color: black;
+}
+.service .servboxes .servbox .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2352941176);
+  width: 6vw;
+  margin: auto;
+  height: 6vw;
+  border-radius: 100%;
+}
+.service .servboxes .servbox .icon i {
+  font-size: 3vw;
+  color: white;
+}
+.service .servboxes .servbox h3 {
+  font-size: 1.7vw;
+  margin: 1vw 0;
+  font-weight: 500;
+}
+.service .servboxes .servbox p {
+  font-size: 1.2vw;
+  line-height: 1.5;
+}
+
+.projects {
+  padding: 6vw 10vw;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 4vw 4vw;
+  margin-bottom: -4vw;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+}
+.projects .p_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3vw;
+  margin-top: 5vw;
+}
+.projects .p_grid .p_box img {
+  border-radius: 2vw;
+}
+.projects .p_grid .p_box h2 {
+  font-size: 1.6vw;
+  font-weight: 700;
+}
+.projects .p_grid .p_box h5 {
+  font-size: 1.3vw;
+  opacity: 0.5;
+}
+
+.contact {
+  width: 100%;
+  height: 100%;
+  padding: 10vw 10vw;
+  background-color: black;
+  color: white;
+  padding-bottom: 0;
+}
+.contact .cinfo {
+  display: flex;
+  justify-content: space-between;
+}
+.contact .cinfo .c_left {
+  width: 45vw;
+}
+.contact .cinfo .c_left p {
+  font-size: 1.3vw;
+  opacity: 0.7;
+  font-weight: 600;
+  line-height: 1.6;
+  margin: 2vw 0;
+}
+.contact .cinfo .c_left p a {
+  color: white;
+  margin-right: 2vw;
+  text-decoration: underline;
+}
+.contact .cinfo .c_right {
+  width: 25vw;
+}
+.contact .cinfo .c_right img {
+  aspect-ratio: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100%;
+}
+.contact .footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 3vw 0;
+  align-items: center;
+  margin-top: 2vw;
+}
+.contact .footer .logo {
+  font-size: 1.3vw;
+  color: white;
+}
+.contact .footer ul {
+  display: flex;
+  gap: 3vw;
+}
+.contact .footer ul li a {
+  color: white;
+  font-size: 1.3vw;
+  opacity: 0.8;
+}/*# sourceMappingURL=style.css.map */
